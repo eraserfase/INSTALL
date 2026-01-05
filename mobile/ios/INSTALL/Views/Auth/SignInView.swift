@@ -117,3 +117,26 @@ struct SignInView: View {
         }
     }
 }
+
+#Preview("Sign In") {
+    SignInView()
+        .environmentObject(AuthViewModel(authService: AuthService()))
+}
+
+#Preview("Sign In - Loading") {
+    SignInView()
+        .environmentObject({
+            let vm = AuthViewModel(authService: AuthService())
+            vm.isLoading = true
+            return vm
+        }())
+}
+
+#Preview("Sign In - Error") {
+    SignInView()
+        .environmentObject({
+            let vm = AuthViewModel(authService: AuthService())
+            vm.errorMessage = "Failed to sign in. Please try again."
+            return vm
+        }())
+}

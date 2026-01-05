@@ -228,3 +228,21 @@ struct WaveformView: View {
         return base + variation
     }
 }
+
+#Preview("Audio Recorder - Idle") {
+    AudioRecorderView { url in
+        print("Recording saved: \(url)")
+    }
+}
+
+#Preview("Waveform - Low Amplitude") {
+    WaveformView(amplitude: 0.3)
+        .frame(height: 100)
+        .padding()
+}
+
+#Preview("Waveform - High Amplitude") {
+    WaveformView(amplitude: 0.9)
+        .frame(height: 100)
+        .padding()
+}

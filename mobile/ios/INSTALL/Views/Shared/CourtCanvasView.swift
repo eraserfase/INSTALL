@@ -127,3 +127,37 @@ struct CourtCanvasView: View {
         context.stroke(arrowHeadPath, with: .color(.gray.opacity(opacity * 0.8)), style: StrokeStyle(lineWidth: 2, lineCap: .round))
     }
 }
+
+#Preview("Court - No Focus") {
+    let sampleStep = Step(
+        label: "Horns Entry",
+        note: "1 enters to wing",
+        playerActions: [
+            PlayerAction(position: 1, actionType: .cut, fromSpotId: "top", toSpotId: "right_wing", targetPosition: nil, hasBall: true),
+            PlayerAction(position: 2, actionType: .spotUp, fromSpotId: "left_wing", toSpotId: nil, targetPosition: nil, hasBall: false),
+            PlayerAction(position: 3, actionType: .spotUp, fromSpotId: "right_corner", toSpotId: nil, targetPosition: nil, hasBall: false),
+            PlayerAction(position: 4, actionType: .spotUp, fromSpotId: "left_elbow", toSpotId: nil, targetPosition: nil, hasBall: false),
+            PlayerAction(position: 5, actionType: .spotUp, fromSpotId: "right_elbow", toSpotId: nil, targetPosition: nil, hasBall: false)
+        ],
+        isEnabled: true
+    )
+
+    CourtCanvasView(step: sampleStep, focusPosition: nil, canvasSize: CGSize(width: 350, height: 400))
+}
+
+#Preview("Court - Focus on Position 1") {
+    let sampleStep = Step(
+        label: "Horns Entry",
+        note: "1 enters to wing",
+        playerActions: [
+            PlayerAction(position: 1, actionType: .cut, fromSpotId: "top", toSpotId: "right_wing", targetPosition: nil, hasBall: true),
+            PlayerAction(position: 2, actionType: .spotUp, fromSpotId: "left_wing", toSpotId: nil, targetPosition: nil, hasBall: false),
+            PlayerAction(position: 3, actionType: .spotUp, fromSpotId: "right_corner", toSpotId: nil, targetPosition: nil, hasBall: false),
+            PlayerAction(position: 4, actionType: .spotUp, fromSpotId: "left_elbow", toSpotId: nil, targetPosition: nil, hasBall: false),
+            PlayerAction(position: 5, actionType: .spotUp, fromSpotId: "right_elbow", toSpotId: nil, targetPosition: nil, hasBall: false)
+        ],
+        isEnabled: true
+    )
+
+    CourtCanvasView(step: sampleStep, focusPosition: 1, canvasSize: CGSize(width: 350, height: 400))
+}
