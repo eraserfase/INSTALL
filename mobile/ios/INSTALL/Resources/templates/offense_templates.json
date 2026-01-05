@@ -1,0 +1,472 @@
+[
+  {
+    "id": "template_horns_basic",
+    "name": "Horns (Basic)",
+    "category": "horns",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Initial Alignment",
+        "note": "Standard horns set with bigs at elbows",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Ball Screen Right",
+        "note": "5 sets ball screen for 1",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "cut", "fromSpotId": "top", "toSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "lift", "fromSpotId": "wing_r", "toSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "ball_screen", "fromSpotId": "elbow_r", "toSpotId": "top", "targetPosition": 1, "hasBall": false}
+        ]
+      },
+      {
+        "index": 2,
+        "label": "Roll and Pop",
+        "note": "5 rolls, 4 pops",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "pop", "fromSpotId": "elbow_l", "toSpotId": "slot_l", "hasBall": false},
+          {"position": 5, "actionType": "roll", "fromSpotId": "top", "toSpotId": "dunker_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_horns_flare",
+    "name": "Horns Flare",
+    "category": "horns",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Initial Alignment",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Flare Screen for 2",
+        "note": "5 sets flare for 2",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "cut", "fromSpotId": "wing_r", "toSpotId": "slot_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "flare_screen", "fromSpotId": "elbow_r", "toSpotId": "wing_r", "targetPosition": 2, "hasBall": false}
+        ]
+      },
+      {
+        "index": 2,
+        "label": "5 Posts Up",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "slot_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "post_up", "fromSpotId": "wing_r", "toSpotId": "lowpost_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_ucla",
+    "name": "UCLA",
+    "category": "quick",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "High Post Alignment",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Pass to High Post",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "cut", "fromSpotId": "top", "toSpotId": "slot_r", "hasBall": false},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": true}
+        ]
+      },
+      {
+        "index": 2,
+        "label": "UCLA Cut",
+        "note": "1 cuts off 5's screen to the basket",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "cut", "fromSpotId": "slot_r", "toSpotId": "dunker_r", "hasBall": false},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "screen", "fromSpotId": "elbow_r", "targetPosition": 1, "hasBall": true}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_flex_basic",
+    "name": "Flex (Basic)",
+    "category": "flex",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Flex Alignment",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Flex Screen",
+        "note": "4 screens for 3, 2 down screens for 4",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "down_screen", "fromSpotId": "wing_r", "toSpotId": "elbow_r", "targetPosition": 4, "hasBall": false},
+          {"position": 3, "actionType": "cut", "fromSpotId": "corner_l", "toSpotId": "lowpost_r", "hasBall": false},
+          {"position": 4, "actionType": "screen", "fromSpotId": "lowpost_l", "targetPosition": 3, "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 2,
+        "label": "4 Pops to Top",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false},
+          {"position": 4, "actionType": "pop", "fromSpotId": "lowpost_l", "toSpotId": "slot_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_floppy",
+    "name": "Floppy (Basic)",
+    "category": "quick",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Stack Alignment",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Double Screens",
+        "note": "2 chooses left or right screen",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "cut", "fromSpotId": "lowpost_r", "toSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 4, "actionType": "screen", "fromSpotId": "elbow_l", "targetPosition": 2, "hasBall": false},
+          {"position": 5, "actionType": "screen", "fromSpotId": "elbow_r", "targetPosition": 2, "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_motion",
+    "name": "Motion (Simple)",
+    "category": "motion",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "4-Out 1-In",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "wing_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Cut and Fill",
+        "note": "3 cuts, 4 fills wing",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": false},
+          {"position": 3, "actionType": "cut", "fromSpotId": "wing_l", "toSpotId": "dunker_l", "hasBall": false},
+          {"position": 4, "actionType": "lift", "fromSpotId": "corner_l", "toSpotId": "wing_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_double_drag",
+    "name": "Double Drag",
+    "category": "quick",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Spread Alignment",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "slot_l", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "dunker_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "dunker_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Double Ball Screen",
+        "note": "4 and 5 screen for 1",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "cut", "fromSpotId": "slot_l", "toSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "ball_screen", "fromSpotId": "dunker_l", "toSpotId": "elbow_l", "targetPosition": 1, "hasBall": false},
+          {"position": 5, "actionType": "ball_screen", "fromSpotId": "dunker_r", "toSpotId": "elbow_r", "targetPosition": 1, "hasBall": false}
+        ]
+      },
+      {
+        "index": 2,
+        "label": "Roll and Pop",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "roll", "fromSpotId": "elbow_l", "toSpotId": "dunker_l", "hasBall": false},
+          {"position": 5, "actionType": "pop", "fromSpotId": "elbow_r", "toSpotId": "top", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_stack_entry",
+    "name": "Stack (Entry)",
+    "category": "quick",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Stack Alignment",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "dunker_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "2 Cuts to Wing",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "cut", "fromSpotId": "lowpost_l", "toSpotId": "wing_l", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "dunker_l", "hasBall": false},
+          {"position": 4, "actionType": "screen", "fromSpotId": "elbow_l", "targetPosition": 2, "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_spain_pnr",
+    "name": "Spain PnR",
+    "category": "quick",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Horns Set",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "top", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Ball Screen + Back Screen",
+        "note": "5 screens for 1, 4 back screens 5's defender",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "cut", "fromSpotId": "top", "toSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "screen", "fromSpotId": "elbow_l", "targetPosition": 5, "hasBall": false},
+          {"position": 5, "actionType": "ball_screen", "fromSpotId": "elbow_r", "toSpotId": "top", "targetPosition": 1, "hasBall": false}
+        ]
+      },
+      {
+        "index": 2,
+        "label": "5 Rolls Free",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "corner_l", "hasBall": false},
+          {"position": 4, "actionType": "pop", "fromSpotId": "elbow_l", "toSpotId": "slot_l", "hasBall": false},
+          {"position": 5, "actionType": "roll", "fromSpotId": "top", "toSpotId": "dunker_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_blob_box",
+    "name": "BLOB (Box)",
+    "category": "blob",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Box Alignment",
+        "note": "Baseline out of bounds",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "lowpost_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "Cross Screen",
+        "note": "3 screens for 5",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false},
+          {"position": 3, "actionType": "screen", "fromSpotId": "elbow_l", "toSpotId": "lowpost_r", "targetPosition": 5, "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "cut", "fromSpotId": "lowpost_r", "toSpotId": "lowpost_l", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_slob_stack",
+    "name": "SLOB (Stack)",
+    "category": "slob",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Stack Alignment",
+        "note": "Sideline out of bounds",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "elbow_l", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "dunker_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "2 Cuts to Top",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "cut", "fromSpotId": "elbow_l", "toSpotId": "top", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 4, "actionType": "screen", "fromSpotId": "dunker_l", "targetPosition": 2, "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "template_quick_wing",
+    "name": "Quick Hitter (Wing Entry)",
+    "category": "quick",
+    "isTemplate": true,
+    "steps": [
+      {
+        "index": 0,
+        "label": "Wing Entry",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "spot_up", "fromSpotId": "wing_r", "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "spot_up", "fromSpotId": "top", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      },
+      {
+        "index": 1,
+        "label": "DHO at Top",
+        "note": "1 hand off to 3",
+        "enabled": true,
+        "playerActions": [
+          {"position": 1, "actionType": "handoff", "fromSpotId": "wing_r", "toSpotId": "top", "targetPosition": 3, "hasBall": true},
+          {"position": 2, "actionType": "spot_up", "fromSpotId": "corner_r", "hasBall": false},
+          {"position": 3, "actionType": "cut", "fromSpotId": "top", "toSpotId": "slot_r", "hasBall": false},
+          {"position": 4, "actionType": "spot_up", "fromSpotId": "lowpost_l", "hasBall": false},
+          {"position": 5, "actionType": "spot_up", "fromSpotId": "elbow_r", "hasBall": false}
+        ]
+      }
+    ]
+  }
+]
